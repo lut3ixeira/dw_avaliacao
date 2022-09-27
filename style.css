@@ -29,12 +29,12 @@ header {
     font-size: 34px;
     line-height: 41px;
 }
- 
+
 nav>a {
     text-decoration: none;
     color: var(--cor2);
 }
- 
+
 nav {
     height: 80px;
     width: 100%;
@@ -162,4 +162,22 @@ nav {
     text-align: center;
     border: thin var(--cor1) solid;
     padding: 20px;
+}
+
+@media screen and (min-width: 900px) {
+    .nav {
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .nav {
+        background-color: rgb(209, 16, 148);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+        background-color: rgb(86, 86, 254);
+    }
 }
