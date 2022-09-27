@@ -170,14 +170,15 @@ nav {
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
     .d2 {
         background-color: rgb(209, 16, 148);
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
     .d1 {
         background-color: rgb(86, 86, 254);
     }
 }
+
