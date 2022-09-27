@@ -6,14 +6,13 @@
     --cor0: #F6FFF8;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
 @media screen and (min-width: 900px) { /*notebook*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
     .d3 {
         background-color: lightgreen;
     }
