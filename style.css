@@ -165,19 +165,19 @@ nav {
 }
 
 @media screen and (min-width: 900px) {
-    .nav {
+    .d3 {
         background-color: lightgreen;
     }
 }
 
 @media screen and (min-width: 600px) {
-    .nav {
+    .d2 {
         background-color: rgb(209, 16, 148);
     }
 }
 
 @media screen and (min-width: 768px) {
-    .nav {
+    .d1 {
         background-color: rgb(86, 86, 254);
     }
 }
