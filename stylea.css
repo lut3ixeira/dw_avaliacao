@@ -1,9 +1,10 @@
 :root {
     --cor0: #ffffff;
     --cor1: #1F4D8B;
-    --cor0: #F6FFF8;
-    --cor0: #F6FFF8;
-    --cor0: #F6FFF8;
+    --cor2: #5677A3;
+    --cor3: #000000;
+    --cor4: #56335B;
+    --cor5: #856689;
 }
 
 @media screen and (min-width: 900px) { /*notebook*/
@@ -34,7 +35,7 @@
 
     nav>a {
         text-decoration: none;
-        color: var(--cor2);
+        color: var(--cor3);
     }
 
     nav {
@@ -47,14 +48,37 @@
     }
 
     .mae, .pai {
+        justify-content: space-around;
         display: flex;
-        flex-direction: row;
         padding: 30px;
         justify-content: space-around;
-        align-items: center;
     }
 
     .d1, .d3 {
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        margin-top: 60px;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 60px;
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
+    }
+
+    .t1 img {
+        width: 160px;
+        height: 220px;
+    }
+
+    .t1 {
+        line-height: 28px;
+        text-align: center;
+        border: thin var(--cor1) solid;
+        padding: 24px;
+    }
+
+    .d2, .d4 {
         padding: 30px;
         line-height: 28px;
         text-align: justify;
@@ -70,82 +94,18 @@
         width: 75%;
     }
 
-    .d2 {
-        text-align: justify;
-        align-items: center;
-        justify-content: center;
-        width: 20%;
-        margin-top: 60px;
-        margin-left: 60px;
-        margin-right: 60px;
-        margin-bottom: 60px;
-        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
-    }
-
-    .f1 img {
-        width: 160px;
-        height: 220px;
-    }
-
-    .f1 {
-        line-height: 28px;
-        text-align: center;
-        border: thin var(--cor1) solid;
-        padding: 20px;
-    }
-
-    .d4 {
-        display: flex;
-        flex-direction: row;
+    .pai {
         justify-content: space-around;
-    }
-
-    .d4 img {
-        width: 160px;
-        height: 170px;
-        border-top-left-radius: 100%;
-        border-top-right-radius: 100%;
-        border-bottom-right-radius: 100%;
-        border-bottom-left-radius: 100%;
-    }
-
-    .d4 figure {
-        line-height: 28px;
-        text-align: left;
-        text-align: center;
-    }
-
-    .d5 {
-        text-align: justify;
+        display: flex;
+        padding: 30px;
         align-items: center;
-        justify-content: center;
-        width: 400px;
-        height: 210px;
-        margin-top: 60px;
-        margin-left: 60px;
-        margin-right: 60px;
-        margin-bottom: 60px;
-        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
     }
 
-    .f2 {
+
+    .t2 {
         line-height: 28px;
         text-align: center;
         border: thin var(--cor1) solid;
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 600px) { /*celular*/
-
-    .d2 {
-        background-color: rgb(209, 16, 148);
-    }
-}
-
-@media screen and (min-width: 601px) and (max-width: 899px) { /*tablet*/
-    
-    .d1 {
-        background-color: rgb(86, 86, 254);
+        padding: 24px;
     }
 }
