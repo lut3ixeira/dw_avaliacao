@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Bohemian Soul";
+    src: url("./fontes/fontes/bohemian_soul/Bohemian\ Soul.otf");  
+}
+@font-face {
+    font-family: "Lio Biolinum" ;
+    src: url("./fontes/linux_biolinum/LinBiolinum_aU.ttf");  
+}
+
 :root {
     --cor0: #ffffff;
     --cor1: #1F4D8B;
@@ -5,10 +14,233 @@
     --cor3: #000000;
     --cor4: #56335B;
     --cor5: #856689;
+    --cor6: #EDF6F9;
+    --cor7: #5d748a;
+    --cor8: #bccddc;
+
+    --fontedestaque: "Bohemian Soul";
 }
 
 @media screen and (min-width: 900px) {
     /*notebook*/
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    header {
+        width: 100%;
+        height: 300px;
+        color: var(--cor0);
+        text-align: center;
+        font-size: larger;
+        background-image: url("./img/cortico.jpeg");
+    }
+
+    #titulo {
+        color: var(--cor1);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 41px;font-family: var(--fontedestaque);
+    }
+
+    .destaque{
+        font-family: var(--fontedestaque);
+        position: relative;
+        top: 30%;
+        transform: translateY(-50%);
+        text-align: center;  
+        color: var(---cor0);    
+    }
+
+    nav>a {
+        text-decoration: none;
+        color: var(--cor3);
+    }
+
+    nav {
+        height: 80px;
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    #d1 {
+        margin: 30px;
+        text-align: center;
+    }
+
+    .mae, .pai {
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #d2, #d4 {
+        background-color: var(--cor6);
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
+        margin: 30px;
+        border-radius: 30px;
+        padding: 20px;
+        line-height: 28px;
+    }
+
+    #d3 {
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
+        text-align: center;
+    }
+
+    #d5{
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
+        text-align: center;
+    }
+
+    footer{
+        color: var(--cor0);
+        background-color: var(--cor8);
+        align-items: center;
+    }
+
+    #r1, #r2, #r3{
+        text-align: center;
+        display: flexbox;
+        flex-direction: row;
+    }
+
+    #insta{
+        width: 2.5%;
+        height: 2.5%;
+    }
+
+    #cr{
+        text-align: center;
+        background-color: var(--cor7);
+        color: var(--cor0);
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 899px) { /*tablet*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    header {
+        width: 100%;
+        height: 300px;
+        color: var(--cor0);
+        text-align: center;
+        font-size: larger;
+        background-image: url("./img/cortico.jpeg");
+    }
+
+    #titulo {
+        color: var(--cor1);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 41px;
+        font-family: var(--fontedestaque);
+    }
+
+    .destaque{
+        font-family: var(--fontedestaque);
+        position: relative;
+        top: 30%;
+        transform: translateY(-50%);
+        text-align: center;  
+        color: var(---cor0);    
+    }
+    
+
+    nav>a {
+        text-decoration: none;
+        color: var(--cor3);
+    }
+
+    nav {
+        height: 80px;
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    #d1 {
+        margin: 30px;
+        text-align: center;
+    }
+
+    .mae, .pai {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #d2, #d4 {
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
+        margin: 30px;
+        border-radius: 30px;
+        padding: 20px;
+        line-height: 28px;
+        background-color: var(--cor6);
+    }
+
+    #d3 {
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
+        text-align: center;
+    }
+
+    #d5{
+        text-align: center;
+    }
+    footer{
+        color: var(--cor0);
+        background-color: var(--cor8);
+        align-items: center;
+    }
+    .rodape{
+        color: #EDF6F9;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 65px;
+        padding: 15px;
+    }
+
+    #r1, #r2, #r3{
+        text-align: center;
+        display: flexbox;
+        flex-direction: row; 
+    }
+    
+    #insta{
+        width: 20%;
+        height: 20%;
+    }
+
+    #cr{
+        text-align: center;
+        background-color: var(--cor7);
+        color: var(--cor0);
+    }
+
+}
+
+@media screen and (max-width: 600px) {/*celular*/
 
     * {
         margin: 0;
@@ -54,7 +286,7 @@
     }
 
     .mae, .pai {
-        display: flex;
+        display: row;
         flex-direction: row;
         padding: 30px;
         justify-content: space-around;
@@ -76,5 +308,28 @@
 
     #d5{
         text-align: center;
+    }
+
+    footer{
+        color: var(--cor0);
+        background-color: var(--cor8);
+        align-items: center;
+    }
+
+    #r1, #r2, #r3{
+        text-align: center;
+        display: flexbox;
+        flex-direction: row;
+    }
+
+    #insta{
+        width: 2.5%;
+        height: 2.5%;
+    }
+
+    #cr{
+        text-align: center;
+        background-color: var(--cor7);
+        color: var(--cor0);
     }
 }

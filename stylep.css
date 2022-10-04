@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Bohemian Soul";
+    src: url("./fontes/fontes/bohemian_soul/Bohemian\ Soul.otf");  
+}
+@font-face {
+    font-family: "Lio Biolinum" ;
+    src: url("./fontes/linux_biolinum/LinBiolinum_aU.ttf");  
+}
+
 :root {
     --cor0: #ffffff;
     --cor1: #1F4D8B;
@@ -5,6 +14,11 @@
     --cor3: #000000;
     --cor4: #56335B;
     --cor5: #856689;
+    --cor6: #EDF6F9;
+    --cor7: #5d748a;
+    --cor8: #bccddc;
+
+    --fontedestaque: "Bohemian Soul";
 }
 
 @media screen and (min-width: 900px) { /*notebook*/
@@ -30,7 +44,348 @@
         font-style: normal;
         font-weight: 700;
         font-size: 34px;
+        line-height: 41px;line-height: 41px;font-family: var(--fontedestaque);
+    }
+
+    .destaque{
+        font-family: var(--fontedestaque);
+        position: relative;
+        top: 30%;
+        transform: translateY(-50%);
+        text-align: center;  
+        color: var(---cor0);    
+    }
+
+    nav>a {
+        text-decoration: none;
+        color: var(--cor3);
+    }
+
+    nav {
+        height: 80px;
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .indice{
+        border-radius: 10px;
+        background-color: var(--cor1);
+        margin: 30px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--cor0);
+    }
+
+    .principal{
+        background-color: var(--cor0);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        line-height: 30px;
+        margin: 30px;
+        color: var(--cor0);
+        border-radius: 10px;
+    }
+
+    #link{
+        list-style-type: none;
+        color: var(--cor0);
+    }
+
+    #d1, #d2, #d3{
+        border-radius: 20px;
+        width: 500px;
+        margin: 10px;
+        background-color: var(--cor2);
+    }
+
+    #d1:hover, #d2:hover, #d3:hover{
+        background-color: var(--cor7);
+    }   
+    
+    .mae{
+        background-color: var(--cor6);
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        line-height: 30px;
+    }
+
+    .fed{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        height: 96%;
+        align-items: center;
+    }
+
+    #p1{
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
+        margin: 20px;
+        width: 120px;
+        height: 130px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        border-bottom-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+    }
+
+    #desc{
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
+        border-radius: 30px;
+        padding: 8px;
+        height: 63%;
+        background-color: var(--cor8);
+    }
+
+    #texto{
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
+        width: 79%;
+        height: 93%;
+        margin: 20px;
+        padding: 10px;
+        background-color: var(--cor8);
+        border-radius: 30px;
+    }
+
+    footer{
+        color: var(--cor0);
+        background-color: var(--cor8);
+        align-items: center;
+    }
+
+    #r1, #r2, #r3{
+        text-align: center;
+        display: flexbox;
+        flex-direction: row;
+    }
+
+    #insta{
+        width: 2.5%;
+        height: 2.5%;
+    }
+
+    #cr{
+        text-align: center;
+        background-color: var(--cor7);
+        color: var(--cor0);
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 899px) { /*tablet*/
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    header {
+        width: 100%;
+        height: 300px;
+        color: var(--cor0);
+        text-align: center;
+        font-size: larger;
+        background-image: url("./img/cortico.jpeg");
+    }
+
+    #titulo {
+        color: var(--cor1);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
         line-height: 41px;
+        font-family: var(--fontedestaque);
+    }
+
+    .destaque{
+        font-family: var(--fontedestaque);
+        position: relative;
+        top: 30%;
+        transform: translateY(-50%);
+        text-align: center;  
+        color: var(---cor0);    
+    }
+
+    nav>a {
+        text-decoration: none;
+        color: var(--cor3);
+    }
+
+    nav {
+        height: 80px;
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color:#000000;
+    }
+
+    .indice{
+        border-radius: 10px;
+        background-color: var(--cor2);
+        margin: 30px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--cor0);
+    }
+
+    .principal{
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        line-height: 30px;
+        margin: 30px;
+        color: var(--cor0);
+        border-radius: 10px;
+    }
+
+    #link{
+        list-style-type: none;
+        color: var(--cor0);
+    }
+
+    #d1, #d2, #d3{
+        border-radius: 20px;
+        width: 500px;
+        margin: 10px;
+        background-color: var(--cor4);
+    }
+
+    #d1:hover, #d2:hover, #d3:hover{
+        background-color: var(--cor5);
+    }   
+    
+    .mae{
+        background-color: rgb(245, 245, 255);
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        line-height: 30px;
+    }
+
+    .fed{
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        height: 96%;
+        align-items: justify;
+    }
+
+    #p1{
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
+        margin: 20px;
+        width: 120px;
+        height: 130px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        border-bottom-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        align-items: justify;
+    }
+
+    #desc{
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
+        border-radius: 30px;
+        padding: 8px;
+        height: 75%;
+        background-color: #e2e2ff;
+        
+    }
+
+    #texto{
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
+        width: 90%;
+        height: 93%;
+        margin: 20px;
+        padding: 10px;
+        background-color: #e2e2ff;
+        border-radius: 30px;
+        align-self: center;
+    }
+    footer{
+        color: var(--cor0);
+        background-color: var(--cor8);
+        align-items: center;
+    }
+    .rodape{
+        color: #EDF6F9;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 65px;
+        padding: 15px;
+    }
+
+    #r1, #r2, #r3{
+        text-align: center;
+        display: flexbox;
+        flex-direction: row; 
+    }
+    
+    #insta{
+        width: 20%;
+        height: 20%;
+    }
+
+    #cr{
+        text-align: center;
+        background-color: var(--cor7);
+        color: var(--cor0);
+    }
+}
+
+@media screen and (max-width: 600px) { /*celular*/
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    header {
+        width: 100%;
+        height: 200px;
+        color: var(--cor0);
+        text-align: center;
+        font-size: larger;
+        background-image: url("./img/cortico.jpeg");
+    }
+
+    #titulo {
+        color: var(--cor1);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 41px;font-family: var(--fontedestaque);
+    }
+
+    .destaque{
+        font-family: var(--fontedestaque);
+        position: relative;
+        top: 30%;
+        transform: translateY(-50%);
+        text-align: center;  
+        color: var(---cor0);    
     }
 
     nav>a {
@@ -99,8 +454,8 @@
     .fed{
         margin: 20px;
         display: flex;
-        flex-direction: column;
-        width: 15%;
+        flex-direction: row;
+        width: 85%;
         height: 96%;
         align-items: center;
     }
@@ -108,8 +463,8 @@
     #p1{
         box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
         margin: 20px;
-        width: 120px;
-        height: 130px;
+        width: 90px;
+        height: 90px;
         border-top-left-radius: 100%;
         border-top-right-radius: 100%;
         border-bottom-right-radius: 100%;
@@ -119,18 +474,41 @@
     #desc{
         box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
         border-radius: 30px;
-        padding: 8px;
-        height: 63%;
+        padding: 10px;
+        height: 35%;
         background-color: #e2e2ff;
     }
 
     #texto{
         box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.20);
-        width: 79%;
-        height: 93%;
+        width: 100%;
+        height: 100%;
         margin: 20px;
         padding: 10px;
         background-color: #e2e2ff;
-        border-radius: 30px;
+        border-radius: 35px;
+    }
+
+    footer{
+        color: var(--cor0);
+        background-color: var(--cor8);
+        align-items: center;
+    }
+
+    #r1, #r2, #r3{
+        text-align: center;
+        display: flexbox;
+        flex-direction: row;
+    }
+
+    #insta{
+        width: 2.5%;
+        height: 2.5%;
+    }
+
+    #cr{
+        text-align: center;
+        background-color: var(--cor7);
+        color: var(--cor0);
     }
 }

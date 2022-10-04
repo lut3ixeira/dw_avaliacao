@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short cut icon" href="./img/icons.png" type="image/x-icon">
+    <link rel="stylesheet" href="./stylem.css">
+    <title>Tutorial - Media Querry</title>
+</head>
+
+<header>
+    <div class="destaque">
+        <h1>O Cortiço</h1>
+        <h5>Aluísio de Azevedo</h5>
+    </div>
+</header>
+
+<nav class="nav">
+    <h2 id="titulo">O Cortiço</h2>
+    <a href="http://127.0.0.1:5500/index.html">home</a>
+    <a href="http://127.0.0.1:5500/personagens.html">personagens</a>
+    <a href="http://127.0.0.1:5500/autor.html">autor</a>
+    <a href="http://127.0.0.1:5500/media.html">media querry</a>
+    <a href="http://127.0.0.1:5500/sobre.html">sobre</a>
+</nav>
+
+<hr>
+
+<body>
+    <div id="d1">
+        <h1>Tutorial Media Querry</h1>
+    </div>
+
+    <div class="mae">
+        <div class="d2">
+            <p>O CSS Media Query provê uma maneira de aplicar CSS somente quando o contexto do navegador e do
+                dispositivo corresponde a uma regra especificada, por exemplo, "a janela de visualização é maior que 480
+                pixels". As consultas de mídia são uma parte essencial do web design responsivo, pois permitem criar
+                layouts diferentes com base no tamanho da janela de visualização, mas também podem ser colocadas para
+                detetar outros elementos relacionados ao ambiente em que seu site está sendo executado, por exemplo, se
+                o usuário usar uma tela sensível ao toque em vez de um mouse. Nesta lição, você primeiro aprenderá a
+                sintaxe usada em consultas de mídia e, em seguida, passará a usá-las em um exemplo do mundo real que
+                mostra como um layout simples pode ser responsivo.</p>
+        </div>
+    </div>
+
+    <div class="mae">
+        <div class="d2">
+            <p>
+            <h2>Noções básicas de consulta de mídia</h2>
+            </p>
+            <p>
+                <br>
+                A sintaxe de consulta de mídia mais simples é assim:
+            </p>
+            <br>
+            <img id="img" src="./img/p1.png">
+            <p>
+                <br>
+                Isso consiste em:
+            <ul>
+                <li>
+                    Um tipo de mídia, que informa ao navegador para qual tipo de mídia esse código é (por exemplo,
+                    impressão ou tela).
+                </li>
+                <li>
+                    Uma expressão de mídia, que é uma regra ou teste que deve ser aprovado para que o CSS contido seja
+                    aplicado.
+                </li>
+                <li>
+                    Um conjunto de regras CSS que serão aplicadas se o teste for aprovado e o tipo de mídia estiver
+                    correto.
+                </li>
+            </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="mae">
+        <div class="d2">
+            <p>
+            <h2>Tipos de mídia</h2>
+            </p>
+
+            <p>
+                <br>
+                Os possíveis tipos de mídia que você pode especificar são:
+
+            <ul>
+                <li>
+                    all
+                </li>
+                <li>
+                    print
+                </li>
+                <li>
+                    screen
+                </li>
+            </ul>
+            </p>
+
+            <p>
+                A consulta de mídia a seguir só definirá o corpo para 12pt se a página for impressa. Não se aplicará
+                quando a página for carregada em um navegador.
+            </p>
+            <p>
+                <br>
+                <img id="img" src="./img/p2.png">
+            </p>
+        </div>
+    </div>
+
+    <div class="mae">
+        <div class="d2">
+            <h2>Regras de recursos de mídia</h2>
+            <p>
+                <br>
+                Depois de especificar o tipo, você pode direcionar um recurso de mídia com uma regra.
+            </p>
+
+            <p>
+                <br>
+            <h2>Largura e Altura</h2>
+            <p><br>O recurso que tendemos a detectar com mais frequência para criar designs responsivos (e que tem amplo
+                suporte ao navegador) é a largura da janela de visualização, e podemos aplicar CSS se a janela de
+                visualização estiver acima ou abaixo de uma certa largura - ou uma largura exata - usando o min-width,
+                max-width e width recursos de mídia.</p>
+
+            <p>
+                <br>
+                Esses recursos são usados ​​para criar layouts que respondem a diferentes tamanhos de tela. Por exemplo,
+                para alterar a cor do texto do corpo para vermelho se a janela de visualização tiver exatamente 600
+                pixels, você usaria a consulta de mídia a seguir.
+            </p>
+
+            <p>
+                <br>
+                <img id="img" src="./img/p3.png">
+            </p>
+
+            <p>
+                <br>
+                Os recursos de mídia width(e height) podem ser usados ​​como intervalos e, portanto, ser prefixados com
+                min-ou max-para indicar que o valor fornecido é mínimo ou máximo. Por exemplo, para tornar a cor azul se
+                a janela de visualização for de 600 pixels ou mais estreita, use max-width:
+            </p>
+
+            <p>
+                <br>
+                <img id="img" src="./img/p4.png">
+            </p>
+
+            <p>
+                <br>
+                Na prática, usar valores mínimos ou máximos é muito mais útil para design responsivo, portanto você
+                raramente verá widthou usará heightsozinho.
+                <BR>
+                Há vários outros recursos de mídia que você pode testar, embora alguns dos recursos mais recentes
+                introduzidos nos níveis 4 e 5 da especificação de consultas de mídia tenham suporte limitado ao
+                navegador.
+            </p>
+            </p>
+        </div>
+    </div>
+
+    <div class="mae">
+        <div class="d2">
+            <h2>Orientação</h2>
+
+            <p>
+                <br>
+                Um recurso de mídia bem suportado é o orientation, que nos permite testar o modo retrato ou paisagem.
+                Para alterar a cor do texto do corpo se o dispositivo estiver na orientação paisagem, use a consulta de
+                mídia a seguir.
+            </p>
+            <p>
+                <br>
+                <img id="img" src="./img/p5.png">
+            </p>
+
+            <p>
+                <br>
+                Uma visualização de área de trabalho padrão tem uma orientação de paisagem e um design que funciona bem
+                nessa orientação pode não funcionar tão bem quando visualizado em um telefone ou tablet no modo retrato.
+                O teste de orientação pode ajudá-lo a criar um layout otimizado para dispositivos no modo retrato.
+            </p>
+        </div>
+    </div>
+
+    <div class="mae">
+        <div class="d2">
+            <h2>Uso de dispositivos apontadores</h2>
+
+            <p>
+                <br>
+                Como parte da especificação do Nível 4, o hoverrecurso de mídia foi introduzido. Esse recurso significa
+                que você pode testar se o usuário tem a capacidade de passar o mouse sobre um elemento, o que significa
+                essencialmente que ele está usando algum tipo de dispositivo apontador; a navegação pela tela sensível
+                ao toque e pelo teclado não paira.
+            </p>
+
+            <p>
+                <br>
+                <img id="img" src="./img/p6.png">
+            </p>
+
+            <p>
+                <br>
+                Se soubermos que o usuário não pode passar o mouse, podemos exibir alguns recursos interativos por
+                padrão. Para usuários que podem passar o mouse, podemos optar por disponibilizá-los quando um link é
+                posicionado sobre o cursor.
+            </p>
+            <p>
+                <br>
+                Também no Nível 4 está o pointerrecurso de mídia. Isso leva três valores possíveis, none, finee coarse.
+                Um fineponteiro é algo como um mouse ou trackpad. Ele permite que o usuário alveje com precisão uma
+                pequena área. Um coarseponteiro é o seu dedo em uma tela sensível ao toque. O valor nonesignifica que o
+                usuário não possui dispositivo apontador; talvez eles estejam navegando apenas com o teclado ou com
+                comandos de voz.
+            </p>
+            <br>
+            O uso pointerpode ajudá-lo a projetar interfaces melhores que respondam ao tipo de interação que um
+            usuário está tendo com uma tela. Por exemplo, você pode criar áreas de hit maiores se souber que o
+            usuário está interagindo com o dispositivo como uma tela sensível ao toque.
+        </div>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <div id="r1">
+                <div>
+                    <img id="insta" src="./img/insta.png">
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/luteixeira._/">Luiza Teixeira</a>
+                </div>
+
+            </div>
+            <div id="r2">
+                <div>
+                    <img id="insta" src="./img/insta.png">
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/_marinamendonca/">Marina Mendonça</a>
+                </div>
+
+            </div>
+            <div id="r3">
+                <div>
+                    <img id="insta" src="./img/insta.png">
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/ppamelamello/">Pamela Mello</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="cr">
+            Copyright © O Cortiço. Feito por Luiza Teixera, Pamela Mello e Marina Mendonça
+        </div>
+    </footer>
+</body>
+
+</html>
