@@ -190,14 +190,6 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    /*celular*/
-
-    .d2 {
-        background-color: rgb(209, 16, 148);
-    }
-}
-
 @media screen and (min-width: 601px) and (max-width: 899px) {
     /*tablet*/
 
